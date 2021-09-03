@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>The Functional Correspondence Problem</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Loading Bootstrap -->
+	<link href="css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/site.css">
+	<link rel="shortcut icon" href="img/favicon.ico">
+
+	<style type="text/css">
+	.video-responsive{
+		overflow:hidden;
+		padding-bottom:56.25%;
+		position:relative;
+		height:0;
+	}
+	.video-responsive iframe{
+		left:0;
+		top:0;
+		height:100%;
+		width:100%;
+		position:absolute;
+	}
+	</style>
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+	<div class="container">
+		<div class="">
+			<h3 class="text-center">The Functional Correspondence Problem</h3>
+			<p class="text-center"><a href="https://zlai0.github.io">Zihang Lai</a>*, <a href="http://www.cs.cmu.edu/~spurushw/">Senthil Purushwalkam</a>*, <a href="http://www.cs.cmu.edu/~abhinavg/">Abhinav Gupta</a></p>
+
+			<p class="text-center">Carnegie Mellon University </p>
+			<p class="text-center small text-muted">* Authors contribued equally</p>
+			<p class="text-center"><b></b></p>
+
+		</div>
+
+		<div class="container col-md-offset-1 col-md-10">
+					<img class="img-responsive" src="img/teaser.png">
+		</div>
+
+
+		</div>
+		<div class="col-md-10 col-md-offset-1">
+
+			<div class="panel panel-default">
+				<div class="panel-heading">Abstract</div>
+
+				<div class="panel-body">
+					<p class="small">The ability to find correspondences in visual data is the essence of most computer vision tasks. But what are the right correspondences? The task of visual correspondence is well defined for two different images of same object instance. In case of two images of objects belonging to same category, visual correspondence is reasonably well-defined in most cases. But what about correspondence between two objects of completely different category -- e.g., a shoe and a bottle?  Does there exist any correspondence? Inspired by humans' ability to: (a) generalize beyond semantic categories and; (b) infer functional affordances, we introduce the problem of functional correspondences in this paper. Given images of two objects, we ask a simple question: what is the set of correspondences between these two images for a given task? For example, what are the correspondences between a bottle and shoe for the task of pounding or the task of pouring. We introduce a new dataset: FunKPoint that has ground truth correspondences for 10 tasks and 20 object categories. We also introduce a modular task-driven representation for attacking this problem and demonstrate that our learned representation is effective for this task. But most importantly, because our supervision signal is not bound by semantics, we show that our learned representation can generalize better on few-shot classification problem. We hope this paper will inspire our community to think beyond semantics and focus more on cross-category generalization and learning representations for robotics tasks.
+					</p>
+
+
+					
+					<pre>@inproceedings{Lai21,
+					  title={The Functional Correspondence Problem},
+					  author={Lai, Zihang and Purushwalkam, Senthil and Gupta, Abhinav},
+					  booktitle={Arxiv},
+					  year={2021}
+					}
+					</pre>
+				</div>
+			</div>
+
+			<div class="panel panel-default">
+				<div class="panel-heading">Downloads</div>
+
+				<div class="panel-body">
+					<ul>
+							<img class="img-responsive" src="img/dataset.png">
+						<li><b>The FunKPoint dataset: </b><a href="https://drive.google.com/file/d/1QJy2SeF87IjkHEK6roA-VJGhp6gQWky5/view?usp=sharing">Google Drive</a></li>
+						<li><b>Paper: </b> <a href="https://arxiv.org/abs/2109.01097/">ArXiv</a></li>
+
+					</ul>
+					Please contact zihang.lai at gmail.com if you have any questions.
+				</div>
+			</div>		
+
+			<div class="panel panel-default">
+				<div class="panel-heading"><b>Acknowledgements</b></div>
+
+				<div class="panel-body">
+					This research is supported by grants from ONR MURI, the ONR Young Investigator Award to Abhinav Gupta and the DAPRA MCS award.
+				</div>
+			</div>		
+
+		<!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
+		<script src="js/vendor/jquery.min.js"></script>
+	</body>
+	</html>
